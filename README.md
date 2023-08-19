@@ -80,3 +80,11 @@ rm -rf source/tmp/* # clear templates cache to apply template changes
 Frequently used admin pages: `Extensions -> Modules` (list of modules), `Service -> Tools -> Update DB Views now` (to apply changes in the database).
 
 Also, to update admin pages, it can be useful to use the `Reload frame` option from the browser context menu.
+
+# Migrations
+
+Generate migration files:
+```bash
+make php
+php vendor/bin/oe-eshop-db_migrate migrations:generate abicorios_installment
+```
