@@ -1,0 +1,22 @@
+{
+    "name": "abicorios/installment",
+    "description": "set up installments for the products",
+    "version": "1.0",
+    "type": "oxideshop-module",
+    "homepage": "https://github.com/abicorios/OxidEshopInstallment",
+    "author": {
+        "name": "OXID Academy",
+        "email": "yaroslav.moroz91@gmail.com",
+        "homepage": "https://github.com/abicorios/OxidEshopInstallment"
+    },
+    "extra": {
+        "oxideshop": {
+            "target-directory": "abicorios/OxidEshopInstallment"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "abicorios\\OxidEshopInstallment\\": "../../../source/modules/abicorios/OxidEshopInstallment/"
+        }
+    }
+}
