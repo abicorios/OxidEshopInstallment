@@ -31,6 +31,12 @@ $aModule = [
             'block'    => 'admin_article_main_extended',
             'file'     => 'views/admin/blocks/article_main__admin_article_main_extended.tpl',
             'position' => '1',
+        ],
+        [
+            'template' => 'page/details/inc/productmain.tpl',
+            'block'    => 'details_productmain_watchlist',
+            'file'     => 'views/blocks/productmain__details_productmain_watchlist.tpl',
+            'position' => '1',
         ]
     ],
     'settings'    => [
