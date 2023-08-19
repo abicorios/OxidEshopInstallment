@@ -82,9 +82,15 @@ Frequently used admin pages: `Extensions -> Modules` (list of modules), `Service
 Also, to update admin pages, it can be useful to use the `Reload frame` option from the browser context menu.
 
 # Migrations
+Documentation: https://docs.oxid-esales.com/developer/en/6.4/development/tell_me_about/migrations.html, https://www.doctrine-project.org/projects/doctrine-migrations/en/2.2/reference/migration-classes.html#migration-classes, see also `source/migration/data`
 
 Generate migration files:
 ```bash
 make php
-php vendor/bin/oe-eshop-db_migrate migrations:generate abicorios_installment
+php vendor/bin/oe-eshop-db_migrate generate abicorios_installment
+```
+
+Run migrations:
+```bash
+php vendor/bin/oe-eshop-db_migrate migrate abicorios_installment
 ```
