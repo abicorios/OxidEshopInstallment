@@ -16,12 +16,12 @@ final class Version20230819031800 extends AbstractMigration
 
     public function up(Schema $schema) : void
     {
-        $this->addSql('ALTER TABLE `oxarticles` ADD `OXPREPAYMENT` DOUBLE NOT NULL DEFAULT 0 COMMENT "Article Prepayment"');
+        $this->addSql('ALTER TABLE `oxarticles` ADD `ABICORIOS_INSTALLMENT_PREPAYMENT` DOUBLE NOT NULL DEFAULT 0 COMMENT "Article prepayment"');
 
     }
 
     public function down(Schema $schema) : void
     {
-        $this->addSql('ALTER TABLE `oxarticles` DROP COLUMN `OXPREPAYMENT`');
+        $this->addSql('ALTER TABLE `oxarticles` DROP COLUMN `ABICORIOS_INSTALLMENT_PREPAYMENT`');
     }
 }
