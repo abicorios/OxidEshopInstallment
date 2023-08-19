@@ -26,6 +26,12 @@ $aModule = [
     'extend'      => [
     ],
     'blocks'      => [
+        [
+            'template' => 'article_main.tpl',
+            'block'    => 'admin_article_main_extended',
+            'file'     => 'views/admin/blocks/article_main__admin_article_main_extended.tpl',
+            'position' => '1',
+        ]
     ],
     'settings'    => [
     ],
