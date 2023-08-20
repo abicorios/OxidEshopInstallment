@@ -74,3 +74,6 @@ div.installment-content {
 div.installment-modal-color {
     color: #000;
 }
+span.installment-space {
+    margin-left: 50px;
+}

@@ -37,6 +37,7 @@
             [{$oDetailsProduct->getMonthlyInstallmentPrice()}]
             [{$currency->sign}]
             [{oxmultilang ident="ABICORIOS_INSTALLMENT_MONTHLY"}]
+            <span class="installment-space"></span>
             [{$oDetailsProduct->oxarticles__abicorios_installment_number_of_months->value}]
             [{oxmultilang ident="ABICORIOS_INSTALLMENT_INSTALLMENTS"}]
           </p>
