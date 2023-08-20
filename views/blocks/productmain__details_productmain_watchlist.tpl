@@ -33,11 +33,7 @@
           [{$currency->sign}]
         </p>
         <p>
-          [{math equation="(price - prepayment)/months"
-            price=$oDetailsProduct->oxarticles__oxprice->value
-            prepayment=$oDetailsProduct->oxarticles__abicorios_installment_prepayment->value
-            months=$oDetailsProduct->oxarticles__abicorios_installment_number_of_months->value
-          }]
+          [{$oDetailsProduct->getMonthlyInstallmentPrice()}]
           [{$currency->sign}]
           [{oxmultilang ident="ABICORIOS_INSTALLMENT_MONTHLY"}]
           [{$oDetailsProduct->oxarticles__abicorios_installment_number_of_months->value}]

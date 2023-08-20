@@ -24,6 +24,7 @@ $aModule = [
     'url'         => 'https://github.com/abicorios/OxidEshopInstallment',
     'email'       => 'yaroslav.moroz91@gmail.com',
     'extend'      => [
+        \OxidEsales\Eshop\Application\Model\Article::class => \abicorios\OxidEshopInstallment\Model\Article::class,
     ],
     'blocks'      => [
         [
