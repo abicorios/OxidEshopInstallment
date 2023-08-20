@@ -159,3 +159,36 @@ Follow these steps to create a Digital Ocean Droplet with Docker Compose using t
    ```
 
 9. Your website should now be accessible using HTTPS on your domain.
+
+10. Download the module:
+
+```bash
+cd ~/oxideshop/source/source/modules
+mkdir abicorios
+cd abicorios
+git clone git@github.com:abicorios/OxidEshopInstallment.git
+```
+
+11. Add the module to the `source/composer.json` file:
+
+```json
+"repositories": {
+    "abicorios/installment": {
+        "type": "path",
+        "url": "./source/modules/abicorios/OxidEshopInstallment/"
+    }
+}
+```
+
+12. Install the module:
+
+```bash
+cd ~/oxideshop
+make php
+composer require abicorios/installment -n
+php bin/oe-console oe:module:install-configuration source/modules/abicorios/OxidEshopInstallment
+rm -rf source/tmp/*
+php vendor/bin/oe-eshop-db_migrate migrate abicorios_installment
+```
+
+13. To enable the module, log in to the OXID eShop admin panel, navigate to `Service -> Tools`, and click on `Update DB Views now`. Then, proceed to `Extensions -> Modules` and activate the module.
