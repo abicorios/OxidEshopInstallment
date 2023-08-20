@@ -3,6 +3,7 @@ button.installment-btn-banner {
     width: 300px;
     height: 150px;
     border-width: 0;
+    border-radius: 30px;
 }
 
 button.installment-btn-banner.en {
