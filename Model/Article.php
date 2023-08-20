@@ -23,6 +23,7 @@ class Article extends Article_parent
     public function hasMonthlyInstallment()
     {
         return $this->oxarticles__abicorios_installment_prepayment->value > 0
-            && $this->oxarticles__abicorios_installment_number_of_months->value > 0;
+            && $this->oxarticles__abicorios_installment_number_of_months->value > 0
+            && $this->oxarticles__oxprice->value > $this->oxarticles__abicorios_installment_prepayment->value;
     }
 }
