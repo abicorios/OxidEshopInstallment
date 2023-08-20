@@ -10,4 +10,5 @@ $aLang = [
     'ABICORIOS_INSTALLMENT_PREPAYMENT' => 'Prepayment',
     'ABICORIOS_INSTALLMENT_NUMBER_OF_MONTHS' => 'N installment months',
     'HELP_ABICORIOS_INSTALLMENT_NUMBER_OF_MONTHS' => 'Number of installment months',
+    'ERROR_INSTALLMENT_PREPAYMENT_GREATER_THAN_PRICE' => 'Prepayment cannot be greater than price',
 ];

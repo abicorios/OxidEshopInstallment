@@ -16,10 +16,14 @@ class ArticleMain extends ArticleMain_parent
         $oArticle->load($aParams['oxarticles__oxid']);
         $prepayment = $oArticle->oxarticles__abicorios_installment_prepayment->value;
         $price = $oArticle->oxarticles__oxprice->value;
-        if ($prepayment > $price) {
+        try {
+            if ($prepayment > $price) {
+                throw oxNew(\OxidEsales\Eshop\Core\Exception\ArticleInputException::class, 'ERROR_INSTALLMENT_PREPAYMENT_GREATER_THAN_PRICE');
+            }
+        } catch (\OxidEsales\Eshop\Core\Exception\ArticleInputException $oEx) {
             $oArticle->oxarticles__abicorios_installment_prepayment->setValue(0);
-            $oArticle->oxarticles__abicorios_installment_number_of_months->setValue(0);
             $oArticle->save();
+            \OxidEsales\Eshop\Core\Registry::getUtilsView()->addErrorToDisplay($oEx);
         }
     }
 }
