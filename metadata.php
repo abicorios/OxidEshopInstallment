@@ -35,8 +35,8 @@ $aModule = [
         ],
         [
             'template' => 'page/details/inc/productmain.tpl',
-            'block'    => 'details_productmain_watchlist',
-            'file'     => 'views/blocks/productmain__details_productmain_watchlist.tpl',
+            'block'    => 'details_productmain_shortdesc',
+            'file'     => 'views/blocks/productmain__details_productmain_shortdesc.tpl',
             'position' => '1',
         ]
     ],
