@@ -18,7 +18,6 @@
             </button>
           </p>
           <h2 class="modal-title" id="exampleModalLabel">[{oxmultilang ident="ABICORIOS_INSTALLMENT_TITLE"}]</h2>
-          <p>[{oxmultilang ident="ABICORIOS_INSTALLMENT_SUBTITLE"}]</p>
         </div>
         <div class="modal-body installment-body-background">
           <p>
