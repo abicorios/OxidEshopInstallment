@@ -19,4 +19,10 @@ class Article extends Article_parent
         $monthlyInstallmentPrice = round($monthlyInstallmentPrice, 2);
         return $monthlyInstallmentPrice;
     }
+
+    public function hasMonthlyInstallment()
+    {
+        return $this->oxarticles__abicorios_installment_prepayment->value > 0
+            && $this->oxarticles__abicorios_installment_number_of_months->value > 0;
+    }
 }
