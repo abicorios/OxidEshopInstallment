@@ -69,6 +69,7 @@ div.installment-body-background * {
 div.installment-content {
     background-color: transparent;
     border-radius: 30px;
+    font-family: sans-serif;
 }
 
 div.installment-modal-color {
