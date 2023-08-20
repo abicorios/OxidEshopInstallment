@@ -25,6 +25,7 @@ $aModule = [
     'email'       => 'yaroslav.moroz91@gmail.com',
     'extend'      => [
         \OxidEsales\Eshop\Application\Model\Article::class => \abicorios\OxidEshopInstallment\Model\Article::class,
+        \OxidEsales\Eshop\Application\Controller\Admin\ArticleMain::class => \abicorios\OxidEshopInstallment\Controller\Admin\ArticleMain::class,
     ],
     'blocks'      => [
         [
