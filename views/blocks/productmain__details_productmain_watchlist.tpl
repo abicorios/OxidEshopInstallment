@@ -8,10 +8,10 @@
   </p>
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade installment-modal-color" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog installment-modal-dialog-position" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
+      <div class="modal-content installment-content">
+        <div class="modal-header installment-modal-header-background">
           <p>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -20,7 +20,7 @@
           <h2 class="modal-title" id="exampleModalLabel">[{oxmultilang ident="ABICORIOS_INSTALLMENT_TITLE"}]</h2>
           <p>[{oxmultilang ident="ABICORIOS_INSTALLMENT_SUBTITLE"}]</p>
         </div>
-        <div class="modal-body">
+        <div class="modal-body installment-body-background">
           <p>
             [{oxmultilang ident="ABICORIOS_INSTALLMENT_PRICE"}]
             <span class="price">
