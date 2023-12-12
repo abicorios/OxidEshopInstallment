@@ -1,4 +1,4 @@
-name: Installment module migrations (abicorios_installment)
-migrations_namespace: OxidEsales\abicorios\OxidEshopInstallment
-table_name: oxmigrations_abicorios_installment
-migrations_directory: data
+table_storage:
+    table_name: oxmigrations_abicorios_installment
+migrations_paths:
+    'OxidEsales\abicorios\OxidEshopInstallment': data
